@@ -7,6 +7,9 @@ import './App.css';
 
 // import State from './state/State'
 
+// import Object from './useState/Object'
+
+import Array from './useState/Array'
 
 // import UseState from './useState/UseState'
 
@@ -31,13 +34,15 @@ import './App.css';
 
   // import Parent from './Child_to_Parent/Parent';
 
+    //  import List from './list/List'
+
   // import Get from './axios/Get';
 
   // import Post from './axios/Post'
 
   // import Put from './axios/Put';
 
-  import Delete from './axios/Delete'
+  // import Delete from './axios/Delete'
 
 function App() {
   return (
@@ -47,6 +52,10 @@ function App() {
     {/* <State/> */}
 
     {/* <UseState/> */}
+
+    {/* <Object/> */}
+
+    <Array/>
 
     {/* <UseEffect/> */}
 
@@ -68,13 +77,15 @@ function App() {
 
    {/* <Parent/> */}
 
+   {/* <List/> */}
+
    {/* <Get/> */}
 
    {/* <Post/> */}
 
    {/* <Put/> */}
 
-   <Delete/>
+   {/* <Delete/> */}
 
     </div>
   );
