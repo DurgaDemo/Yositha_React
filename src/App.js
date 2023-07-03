@@ -29,7 +29,11 @@ import './App.css';
 
   // import Uncontrolled from './UnControlled_Component/Uncontrolled'
 
-  import Parent from './Child_to_Parent/Parent';
+  // import Parent from './Child_to_Parent/Parent';
+
+  // import Get from './axios/Get';
+
+  import Post from './axios/Post'
 
 function App() {
   return (
@@ -58,7 +62,11 @@ function App() {
 
    {/* <Uncontrolled/> */}
 
-   <Parent/>
+   {/* <Parent/> */}
+
+   {/* <Get/> */}
+
+   <Post/>
 
     </div>
   );
