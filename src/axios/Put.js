@@ -1,10 +1,10 @@
 import axios from 'axios'
-import React, { useState } from 'react'
+import React,{ useState } from 'react'
 
-function Post() {
-
+function Put() {
 const data={fname:"",lastName:""}
 const [inputData,setInputData]=useState(data)
+
 
 
 function handleData(event){
@@ -12,27 +12,39 @@ function handleData(event){
 }
 
 function handleSubmit(event){
-  event.preventDefault()
-  axios.post("https://jsonplaceholder.typicode.com/users",inputData)
-  .then((respose)=>{
-  console.log(respose);
-  })
-  .catch((error)=>{
-   console.log(error)
-  })
-}
+    event.preventDefault()
+    axios.post("https://jsonplaceholder.typicode.com/users",inputData)
+    .then((respose)=>{
+    console.log(respose);
+    })
+    .catch((error)=>{
+     console.log(error)
+    })
+  }
+
+  function handleUpdate(event){
+    event.preventDefault()
+    axios.put("https://jsonplaceholder.typicode.com/users/1",inputData)
+    .then((respose)=>{
+    console.log(respose);
+    })
+  }
+
+
   return (
-    <div>Post
+    <div>Put
+
 <br></br>
  <label>First Name:</label>
  <input type='text' name='fname' value={inputData.fname} onChange={handleData}/><br></br>
  <label>Last Name:</label>
  <input type='text' name='lastName' value={inputData.lastName} onChange={handleData}/><br></br>
 <button onClick={handleSubmit}>Submit</button><br/>
+<button onClick={handleUpdate}>Update</button>
 
 
     </div>
   )
 }
 
-export default Post
+export default Put

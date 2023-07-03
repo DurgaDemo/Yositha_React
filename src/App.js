@@ -33,7 +33,11 @@ import './App.css';
 
   // import Get from './axios/Get';
 
-  import Post from './axios/Post'
+  // import Post from './axios/Post'
+
+  // import Put from './axios/Put';
+
+  import Delete from './axios/Delete'
 
 function App() {
   return (
@@ -66,7 +70,11 @@ function App() {
 
    {/* <Get/> */}
 
-   <Post/>
+   {/* <Post/> */}
+
+   {/* <Put/> */}
+
+   <Delete/>
 
     </div>
   );
